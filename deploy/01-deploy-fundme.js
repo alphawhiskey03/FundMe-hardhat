@@ -12,6 +12,7 @@ module.exports = async ({ getNamedAccounts, deployments, network }) => {
   // in rinkeby account array in network section 0th array index is deployer
 
   const { deployer } = await getNamedAccounts();
+  console.log(deployer);
   // console.log(deployer);
   const chainName = network.name;
   // const ethUsdPriceFeedAddress = networkConfig[chainId]["ethUsdPriceFeed"];
